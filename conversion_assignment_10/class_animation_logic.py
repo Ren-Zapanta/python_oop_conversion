@@ -2,6 +2,7 @@ import pygame
 from class_typewriter_animation import Typewriter
 from config import base_font, green, screen, screen_height
 
+
 class Intro:
     def __init__(self):
         self.stage = "init"
