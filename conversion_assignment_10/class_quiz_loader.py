@@ -1,6 +1,8 @@
 class QuizLoader:
-    def __init__(self, file_path):
-        self.file_path = file_path
+    def __init__(self, file_name):
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+
+            self.file_path = os.path.join(base_dir, "..", "data", file_name)
 
     def load_questions(self):
         with open(self.file_path, "r", encoding="utf-8") as file:

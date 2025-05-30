@@ -10,7 +10,7 @@ from class_feedback_handler import FeedbackHandler
 pygame.init()
 
 intro = Intro()
-loader = QuizLoader(file_path)
+loader = QuizLoader("quiz.txt")
 questions = loader.load_questions()
 random.shuffle(questions)
 
